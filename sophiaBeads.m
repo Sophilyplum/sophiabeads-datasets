@@ -1,0 +1,40 @@
+% Script to run SophiaBeads experiments.
+% Follows the tutorial as outlined in Section 3 in
+% SophiaBeads Datasets Reconstruction and Quantification Tutorials.
+%
+% Written by S.B. Coban for the SophiaBeads Datasets project.
+% University of Manchester, 2015.
+
+addpath XTek/ tools/
+
+%%%% Manually modify these variables %%%%
+pathname = '/media/SophiaBeads_Datasets/SophiaBeads_64_averaged/';
+filename = 'SophiaBeads_64_averaged';
+geom_type = '2D'; % Necessary for loading data. Type can be '2D' or '3D' only.
+experiment_name = 'CGLS_200slices'; % For naming purposes...
+slices = 200; % Only used if geom_type == 3D.
+iterations = 12;                     %   
+%%%% ------------------------------- %%%%
+
+if ~exist('mex/CBproject_c.mexa64','file') || ~exist('mex/CBbackproject_c.mexa64','file')
+    setup; % If no mex files are found, do a setup.
+else
+    addpath mex/
+end
+
+[data,geom] = pre_recon(pathname, filename, geom_type, slices); % Everything up to the reconstruction stage.
+
+fprintf('\nReconstructing the SophiaBeads dataset (%s)...\n',geom_type);
+xcgls = cgls_XTek(data, geom, iterations);
+xcgls = reshape(xcgls,geom.voxels);
+disp('Reconstruction is complete!');
+
+% Plot the reconstructions
+if strcmp(geom_type,'2D')
+    figure;imagesc(xcgls);set(gca,'XTick',[],'YTick',[]);axis square;colormap gray;
+else
+    % plot the centre slice in 3D...
+    figure;imagesc(xcgls(:,:,floor(slices/2)));set(gca,'XTick',[],'YTick',[]);axis square;colormap gray;
+end
+
+volname = write_vol(xcgls, pathname, filename, experiment_name, 'single');
