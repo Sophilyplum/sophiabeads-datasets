@@ -9,8 +9,8 @@
 addpath XTek/ tools/
 
 %%%% Manually modify these variables %%%%
-pathname = '/media/SophiaBeads_Datasets/SophiaBeads_64_averaged/';
-filename = 'SophiaBeads_64_averaged';
+pathname = ''; % Name of path where the dataset is stored e.g. '/media/somefolder/SophiaBeads_64_averaged/'
+filename = ''; % Name of the dataset e.g. 'SophiaBeads_64_averaged'
 geom_type = '2D'; % Necessary for loading data. Type can be '2D' or '3D' only.
 experiment_name = 'CGLS_200slices'; % For naming purposes...
 slices = 200; % Only used if geom_type == 3D.
