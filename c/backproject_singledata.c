@@ -10,9 +10,9 @@ References:
 */
 
 /* 
-Copyright (c) Sophia Bethany Coban, William Michael Thompson and David Szotten
+Copyright (c) 2015 Sophia Bethany Coban, William Michael Thompson and David Szotten
 Code is available via the SophiaBeads Datasets project.
-University of Manchester, 2015.
+University of Manchester.
 */
 
 #include "jacobs_rays.h"

@@ -2,15 +2,15 @@
 % Follows the tutorial as outlined in Section 3 in
 % SophiaBeads Datasets Reconstruction and Quantification Tutorials.
 %
-% Copyright (c) Sophia Bethany Coban
+% Copyright (c) 2015 Sophia Bethany Coban
 % Code is available via the SophiaBeads Datasets project.
-% University of Manchester, 2015.
+% University of Manchester.
 
 addpath XTek/ tools/
 
 %%%% Manually modify these variables %%%%
-pathname = ''; % Name of path where the dataset is stored e.g. '/media/somefolder/SophiaBeads_64_averaged/'
-filename = ''; % Name of the dataset e.g. 'SophiaBeads_64_averaged'
+pathname = '/Users/Sophilyplum/Desktop/SophiaBeads_64_averaged/'; % Name of path where the dataset is stored e.g. '/media/somefolder/SophiaBeads_64_averaged/'
+filename = 'SophiaBeads_64_averaged'; % Name of the dataset e.g. 'SophiaBeads_64_averaged'
 geom_type = '2D'; % Necessary for loading data. Type can be '2D' or '3D' only.
 experiment_name = 'CGLS_200slices'; % For naming purposes...
 slices = 200; % Only used if geom_type == 3D.

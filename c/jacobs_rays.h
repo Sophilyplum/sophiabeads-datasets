@@ -9,9 +9,9 @@ References:
 */
 
 /* 
-Copyright (c) Sophia Bethany Coban and David Szotten
+Copyright (c) 2015 Sophia Bethany Coban and David Szotten
 Code is available via the SophiaBeads Datasets project.
-University of Manchester, 2015.
+University of Manchester.
 */
 
 #ifndef _JACOBSRAYS_HEADER_

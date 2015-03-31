@@ -14,9 +14,9 @@ function centre = find_centre(data, geom)
 % T. Liu - "Direct central ray determination in computed microtomography",
 % Optical Engineering, April 2009.
 %
-% Copyright (c) Sophia Bethany Coban and William Michael Thompson
+% Copyright (c) 2015 Sophia Bethany Coban and William Michael Thompson
 % Code is available via the SophiaBeads Datasets project.
-% University of Manchester, 2015.
+% University of Manchester.
 
 % Set up coordinate grids for testing the fit to data
 [alpha, s] = meshgrid(geom.angles,geom.dets.y);

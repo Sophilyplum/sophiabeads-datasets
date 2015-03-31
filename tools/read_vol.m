@@ -21,9 +21,9 @@ function vol_soln = read_vol(pathname, filename, experiment_name, voxels, slices
 % OUTPUT:
 %   vol_soln: The variable name for the reconstructed volume.
 %
-% Copyright (c) Sophia Bethany Coban
+% Copyright (c) 2015 Sophia Bethany Coban
 % Code is available via the SophiaBeads Datasets project.
-% University of Manchester, 2015.
+% University of Manchester.
 
 %% Quick error checking:
 

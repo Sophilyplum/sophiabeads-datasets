@@ -20,9 +20,9 @@ function filename_vol = write_vol(vol, pathname, filename, recon_method, type)
 % OUTPUT:
 %   filename_vol: Name of the file the volume is saved as.
 %
-% Copyright (c) Sophia Bethany Coban
+% Copyright (c) 2015 Sophia Bethany Coban
 % Code is available via the SophiaBeads Datasets project.
-% University of Manchester, 2015. 
+% University of Manchester. 
 
 %% Quick error checking:
 
