@@ -22,7 +22,7 @@ function filename_vol = write_vol(vol, pathname, filename, recon_method, type)
 %
 % Copyright (c) Sophia Bethany Coban
 % Code is available via the SophiaBeads Datasets project.
-% University of Manchester, 2015.
+% University of Manchester, 2015. 
 
 %% Quick error checking:
 
