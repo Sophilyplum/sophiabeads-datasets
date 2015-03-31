@@ -17,7 +17,8 @@ function x = cgls_XTek(b, geom, iterations)
 % OUTPUT:
 %   x: Image (volume data).
 %
-% Written by S.B. Coban for the SophiaBeads Datasets project.
+% Copyright (c) Sophia Bethany Coban
+% Code is available via the SophiaBeads Datasets project.
 % University of Manchester, 2015.
 
 % Make sure data is single precision

@@ -21,7 +21,8 @@ function write_tiff(vol, pathname, filename, recon_method, voxels, type)
 % OUTPUT:
 %   none.
 %
-% Written by S.B. Coban for the SophiaBeads Datasets project.
+% Copyright (c) Sophia Bethany Coban
+% Code is available via the SophiaBeads Datasets project.
 % University of Manchester, 2015.
 
 %% Quick error checking:

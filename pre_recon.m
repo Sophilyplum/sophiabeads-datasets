@@ -13,7 +13,8 @@ function [data,geom] = pre_recon(pathname, filename, geom_type, slices)
 %   data: Returned Nikon XTek data in single format.
 %   geom: Returned geometry structure array.
 %
-% Written by S.B. Coban for the SophiaBeads Datasets project.
+% Copyright (c) Sophia Bethany Coban
+% Code is available via the SophiaBeads Datasets project.
 % University of Manchester, 2015.
 
 % Load dataset:

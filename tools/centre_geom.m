@@ -12,7 +12,8 @@ function geom = centre_geom(data, geom, c_slice)
 % OUTPUT:
 %   geom: Updated geometry structure array.
 %   
-% Written by W.Thompson, modified by S.B. Coban for the SophiaBeads Datasets project.
+% Copyright (c) Sophia Bethany Coban and William Michael Thompson
+% Code is available via the SophiaBeads Datasets project.
 % University of Manchester, 2015.
 
 % Check to see if 2D data, if not then work with the central slice

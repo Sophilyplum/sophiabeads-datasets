@@ -13,7 +13,8 @@ function [data,geom]=cutDown_data(data, geom, geom_type, slices)
 %   data: Cut down Nikon XTek data.
 %   geom: Updated geometry structure array.
 %
-% Written by S.B. Coban for the SophiaBeads Datasets project.
+% Copyright (c) Sophia Bethany Coban
+% Code is available via the SophiaBeads Datasets project.
 % University of Manchester, 2015.
 
 % All Nikon XTek datasets have default size 2000 x 2000 x 2000. For the

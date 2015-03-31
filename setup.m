@@ -1,7 +1,8 @@
 % A short script to build the mex files for forward and back projectors.
 % Saves the output in the mex/ folder.
 %
-% Written by S.B. Coban for the SophiaBeads Datasets project.
+% Copyright (c) Sophia Bethany Coban
+% Code is available via the SophiaBeads Datasets project.
 % University of Manchester, 2015.
 
 mkdir('mex'); disp('Created the folder mex/...');

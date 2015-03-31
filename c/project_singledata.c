@@ -3,11 +3,16 @@
  Published as part of the SophiaBeads Datasets project. 
 */
 
-/* Modified by Sophia Bethany Coban, University of Manchester, 2015.
-
+/*
 References:
  David Szotten, Limited Data Problems in X-ray and Polarized Light Tomography. PhD Thesis, School of Mathematics, University of Manchester. 2011.
  Will Thompson, Source firing patterns and reconstruction algorithms for a switched source, offset detector CT machine. PhD Thesis, School of Mathematics, University of Manchester. 2011.
+*/
+
+/* 
+Copyright (c) Sophia Bethany Coban, William Michael Thompson and David Szotten
+Code is available via the SophiaBeads Datasets project.
+University of Manchester, 2015.
 */
 
 #include "jacobs_rays.h"

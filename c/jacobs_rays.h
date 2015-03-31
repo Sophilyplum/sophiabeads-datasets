@@ -3,8 +3,15 @@ jacobs_rays HEADER FILE
 Written by David Szotten, modified by Sophia Bethany Coban for the SophiaBeads Datasets project. University of Manchester, 2015.
 */
  
-/* References:
+/*
+References:
  David Szotten, Limited Data Problems in X-ray and Polarized Light Tomography. PhD Thesis, School of Mathematics, University of Manchester. 2011.
+*/
+
+/* 
+Copyright (c) Sophia Bethany Coban and David Szotten
+Code is available via the SophiaBeads Datasets project.
+University of Manchester, 2015.
 */
 
 #ifndef _JACOBSRAYS_HEADER_

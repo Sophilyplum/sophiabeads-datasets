@@ -2,7 +2,8 @@
 % Follows the tutorial as outlined in Section 3 in
 % SophiaBeads Datasets Reconstruction and Quantification Tutorials.
 %
-% Written by S.B. Coban for the SophiaBeads Datasets project.
+% Copyright (c) Sophia Bethany Coban
+% Code is available via the SophiaBeads Datasets project.
 % University of Manchester, 2015.
 
 addpath XTek/ tools/
