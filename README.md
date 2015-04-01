@@ -3,7 +3,7 @@ This repository contains the codes released for the SophiaBeads Datasets project
 
 **Release:** v1.0
 
-**DOI:** Zenodo Upload
+**DOI:** [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.16539.svg)](http://dx.doi.org/10.5281/zenodo.16539)
 
 
 
@@ -82,7 +82,7 @@ To get in touch please visit [the contributor's webpage](http://www.maths.manche
 ## References
 **SophiaBeads Datasets**: [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.16474.svg)](http://dx.doi.org/10.5281/zenodo.16474)
 
-**SophiaBeads Datasets Project Codes**: 
+**SophiaBeads Datasets Project Codes**: [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.16539.svg)](http://dx.doi.org/10.5281/zenodo.16539)
 
 **Documentation**: [SophiaBeads Datasets Reconstruction and Quantification Tutorials][mimslink] 
 
