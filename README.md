@@ -74,9 +74,9 @@ To get in touch please visit [the contributor's website](http://www.maths.manche
   2. The MEX files for all platforms are included in the release, as well the sourcecodes (written in c). This is done so the user is able to build and test own projectors and backprojectors. We include an additional script (setup.m) for users to work with _as a template_. However, this does not guarantee that the script will work in any operating system (not tested in Windows).
 
   3. Version V1.0 codes are tested with the following versions of MATLAB, installed on major operating systems:
-    - **Scintific Linux 6**, **Ubuntu 12.04**, **Ubuntu 14.04**: MATLAB R2014b, MATLAB R2013a, MATLAB 2010a.
-    - **Mac OSX 10.9** (Mavericks), **Mac OSX 10.10** (Yosemite): MATLAB R2013a, MATLAB R2014b, MATLAB R2013a.
-    - **Windows 7**, **Windows 8.1**: MATLAB R2012b, MATLAB R2013a, MATLAB R2014a, MATLAB R2014b. 
+    - **Scintific Linux 6**, **Ubuntu 12.04** and **14.04**: MATLAB R2010a, R2013a, 2014b.
+    - **Mac OSX 10.9** (Mavericks) and **10.10** (Yosemite): MATLAB R2009b, R2013a, R2014b.
+    - **Windows 7** and **8.1**: MATLAB R2012b, R2013a, R2014a, R2014b. 
  
 ### References
 
