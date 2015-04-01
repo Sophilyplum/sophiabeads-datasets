@@ -23,61 +23,60 @@ Download the GitHub repository as a [tar.gz](https://codeload.github.com/Sophily
 Visit the [Zenodo SophiaBeads Datasets](https://zenodo.org/record/16474) page to access and download the datasets (zip files). 
 
 ### Repository Contents
-* XTek/
-  - CBproject.m
-  - CBbackproject.m
-  - load_nikon.m
-* c/
-  - CBproject_c.c
-  - CBbackproject_c.c
-  - project_singledata.c
-  - backproject_singledata.c
-   - jacobs_rays.h
-* mex/
-  - CBbackproject_c.mexa64
-  - CBbackproject_c.mexmaci64
-  - CBbackproject_c.mexw64
-  - CBproject_c.mexa64
-  - CBproject_c.mexmaci64
-  - CBproject_c.mexw64
-* tools/
-  - centre_geom.m
-  - find_centre.m
-  - read_vol.m
-  - write_tiff.m
-  - write_vol.m
-- sophiaBeads.m
-- setup.m
-- pre_recon.m
-- cutDown_data.m
-- cgls_XTek.m
+  * XTek/
+    - CBproject.m
+    - CBbackproject.m
+    - load_nikon.m
+  * c/
+    - CBproject_c.c
+    - CBbackproject_c.c
+    - project_singledata.c
+    - backproject_singledata.c
+     - jacobs_rays.h
+  * mex/
+    - CBbackproject_c.mexa64
+    - CBbackproject_c.mexmaci64
+    - CBbackproject_c.mexw64
+    - CBproject_c.mexa64
+    - CBproject_c.mexmaci64
+    - CBproject_c.mexw64
+  * tools/
+    - centre_geom.m
+    - find_centre.m
+    - read_vol.m
+    - write_tiff.m
+    - write_vol.m
+  - sophiaBeads.m
+  - setup.m
+  - pre_recon.m
+  - cutDown_data.m
+  - cgls_XTek.m
 
 
-**NOTE**: Individual help can be obtained by running the command 'help <scriptname>' in MATLAB command window.
+*NOTE*: Individual help can be obtained by running the command 'help <scriptname>' in MATLAB command window.
 
 ### Documentation
-A detailed documentation and tutorials about the codes can be found in _this report_.
-
+We strongly recommend the user to read the detailed documentation and tutorials about running the codes, which can be found in _this report_.
 
 ### Want to Contribute?
-We are not open to external contributions. However, if you would still like to contribute with an idea or improved code, please get in touch and we will update the project with the appropriate attribution to you.
+We are not open to external contributions. However, if you would still like to contribute with an idea or improved code, please get in touch and we will consider an update to the project with the appropriate attribution to you.
 
 ### Contact Us
-We do not offer user support for this code. However, we welcome any suggestions for improvements or ideas. 
+We do not offer user support for the project codes. However, we welcome any suggestions for improvements or ideas. 
 
 To get in touch please visit [the contributor's website](http://www.maths.manchester.ac.uk/~scoban/contact.html) and fill in the contact form.
 
 ### Important Notes
-* Please note that if you are using the SophiaBeads Datasets and the project codes, you _must_ refer to both of these separately. 
-  - To cite the datasets, please export the relevant citation style on the right hand size of the Zenodo page.
-  - To cite the GitHub code, please _update with link_.
+  1. Please note that if you are using the SophiaBeads Datasets and the project codes, you _must_ refer to both of these separately. 
+    - To cite the datasets, please export the relevant citation style on the right hand size of the Zenodo page.
+    - To cite the GitHub code, please _update with link_.
 
-* The MEX files for all platforms are included in the release, as well the sourcecodes (written in c). This is done so the user is able to build and test own projectors and backprojectors. We include an additional script (setup.m) for users to work with _as a template_. However, this does not guarantee that the script will work in any operating system (not tested in Windows).
+  2. The MEX files for all platforms are included in the release, as well the sourcecodes (written in c). This is done so the user is able to build and test own projectors and backprojectors. We include an additional script (setup.m) for users to work with _as a template_. However, this does not guarantee that the script will work in any operating system (not tested in Windows).
 
-* Version V1.0 codes are tested with the following versions of MATLAB, installed on major operating systems:
-  - **Scintific Linux 6**, **Ubuntu 12.04**, **Ubuntu 14.04**: MATLAB R2014b, MATLAB R2013a, MATLAB 2010a.
-  - **Mac OSX 10.9** (Mavericks), **Mac OSX 10.10** (Yosemite): MATLAB R2013a, MATLAB R2014b, MATLAB R2013a.
-  - **Windows 7**, **Windows 8.1**: MATLAB R2012b, MATLAB R2013a, MATLAB R2014a, MATLAB R2014b. 
+  3. Version V1.0 codes are tested with the following versions of MATLAB, installed on major operating systems:
+    - **Scintific Linux 6**, **Ubuntu 12.04**, **Ubuntu 14.04**: MATLAB R2014b, MATLAB R2013a, MATLAB 2010a.
+    - **Mac OSX 10.9** (Mavericks), **Mac OSX 10.10** (Yosemite): MATLAB R2013a, MATLAB R2014b, MATLAB R2013a.
+    - **Windows 7**, **Windows 8.1**: MATLAB R2012b, MATLAB R2013a, MATLAB R2014a, MATLAB R2014b. 
  
 ### References
 
