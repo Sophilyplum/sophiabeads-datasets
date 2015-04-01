@@ -17,7 +17,7 @@ SophiaBeads Datasets are acquired specifically for testing and comparing reconst
 The datasets are collected using the _Nikon Custom Bay_ X-ray CT machine. The machine employs a cone-beam geometry and requires specific geometrical setup before the datasets can be used. The sophiabeads-datasets code _allows_ the user to interpret and use these datasets in their work. The codes in that sense are essential to use the SophiaBeads Datasets.
 
 #### Downloading
-Download the GitHub repository as a [tar.gz]() or a [zip]() file at the top of this page.
+Download the GitHub repository as a [tar.gz](https://codeload.github.com/Sophilyplum/sophiabeads-datasets/legacy.tar.gz/master) or a [zip](https://codeload.github.com/Sophilyplum/sophiabeads-datasets/legacy.zip/master) file at the top of this page.
 
 Visit the [Zenodo SophiaBeads Datasets](https://zenodo.org/record/16474) page to access and download the datasets. 
 
