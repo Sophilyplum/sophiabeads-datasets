@@ -14,7 +14,7 @@ Thank you for taking an interest in this project. The codes in this repository a
 #### Purpose of the Project and the Code
 SophiaBeads Datasets are acquired specifically for testing and comparing reconstruction methods for x-ray computed tomography. Our main objective is to provide a framework where reconstruction methods can be implemented and tested with the use of these datasets, where we know what the answer should be. You can find more information on the purpose of these datasets via _this paper_.
 
-The datasets are collected using the _Nikon Custom Bay_ X-ray CT machine. The machine employs a cone-beam geometry and requires specific geometrical setup before the datasets can be used. The sophiabeads-datasets code _allows_ the user to interpret and use these datasets in their work. The codes in that sense are essential to use the SophiaBeads Datasets.
+The datasets are collected using [Nikon Custom Bay X-ray CT](www.mxif.manchester.ac.uk/resources/imaging-systems/nikon-custom-bay), which employs a cone-beam geometry. The machine returns a set of TIFF files and information about the scan geometry during the acquisition stage. The project code released efficiently loads this dataset and sets up the geometry before the reconstruction stage. So the sophiabeads-datasets code _allows_ the user to interpret and use these datasets in their own work. The codes are **essential to use the SophiaBeads Datasets**.
 
 #### Downloading
 Download the GitHub repository as a [tar.gz]() or a [zip]() file at the top of this page.
