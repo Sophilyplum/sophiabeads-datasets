@@ -1,66 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>SophiaBeads Datasets Project Codes by Sophilyplum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Sophiabeads Datasets Project Code by Sophilyplum</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
-    <div id="container">
-      <div class="inner">
+    <section class="page-header">
+      <h1 class="project-name">SophiaBeads Datasets Project Codes</h1>
+      <h2 class="project-tagline">This repository contains the code released for the SophiaBeads Datasets project. s</h2>
+      <a href="https://github.com/Sophilyplum/sophiabeads-datasets" class="btn">View on GitHub</a>
+      <a href="https://github.com/Sophilyplum/sophiabeads-datasets/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Sophilyplum/sophiabeads-datasets/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-        <header>
-          <h1>Sophiabeads Datasets Project Code</h1>
-          <h2>This repository contains the code released for the SophiaBeads Datasets project. </h2>
-        </header>
-
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/Sophilyplum/sophiabeads-datasets/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/Sophilyplum/sophiabeads-datasets/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/Sophilyplum/sophiabeads-datasets" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
-
-        <hr>
-
-        <section id="main_content">
-          <h1>
-<a id="sophiabeads-datasets" class="anchor" href="#sophiabeads-datasets" aria-hidden="true"><span class="octicon octicon-link"></span></a>sophiabeads-datasets</h1>
-
-<p>This repository contains the code released for the SophiaBeads Datasets project. </p>
-
-<p><strong>Version:</strong> V1.0</p>
+    <section class="main-content">
+      <p><strong>Release:</strong> v1.0</p>
 
 <p><strong>DOI:</strong> Zenodo Upload</p>
 
-<h3>
-<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h3>
+<h1>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h1>
 
 <p>Thank you for taking an interest in this project. The codes in this repository are released as part of the SophiaBeads Datasets Project, and tailored to be used to process and/or reconstruct the SophiaBeads Datasets. </p>
 
-<h4>
-<a id="purpose-of-the-project-and-the-code" class="anchor" href="#purpose-of-the-project-and-the-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Purpose of the Project and the Code</h4>
+<h3>
+<a id="purpose" class="anchor" href="#purpose" aria-hidden="true"><span class="octicon octicon-link"></span></a>Purpose</h3>
 
-<p>SophiaBeads Datasets are acquired specifically for testing and comparing reconstruction methods for x-ray computed tomography. Our main objective is to provide a framework where reconstruction methods can be implemented and tested with the use of these datasets, where we know what the answer should be. You can find more information on the purpose of these datasets via <em>this paper</em>.</p>
+<p>SophiaBeads Datasets are acquired <em>specifically</em> for testing and comparing reconstruction methods used for computed tomography problems. Our main objective is to provide a framework where reconstruction methods can be implemented and tested with the use of these datasets, where <em>we know what the reconstructed image is</em>. However, to be able to reconstruct these datasets, we first have to know how to interpret the projection data and set up the correct scan geometry. To be able to do that, we have to use the SophiaBeads Datasets project codes -- these codes are <strong>essential</strong> in order to reconstruction SophiaBeads Datasets. The release contains scripts for loading the datasets, pre-reconstruction steps, and a reconstruction algorithm (cgls_XTek.m) as a template.</p>
 
-<p>The datasets are collected using the <em>Nikon Custom Bay</em> X-ray CT machine. The machine employs a cone-beam geometry and requires specific geometrical setup before the datasets can be used. The sophiabeads-datasets code <em>allows</em> the user to interpret and use these datasets in their work. The codes in that sense are essential to use the SophiaBeads Datasets.</p>
+<p>You can find more information on the purpose and application of these datasets in <em>this paper</em>.</p>
 
-<h4>
-<a id="downloading" class="anchor" href="#downloading" aria-hidden="true"><span class="octicon octicon-link"></span></a>Downloading</h4>
+<h1>
+<a id="downloading" class="anchor" href="#downloading" aria-hidden="true"><span class="octicon octicon-link"></span></a>Downloading</h1>
 
-<p>Download the GitHub repository as a <a href="">tar.gz</a> or a <a href="">zip</a> file at the top of this page.</p>
+<p>Download the GitHub repository as a <a href="https://codeload.github.com/Sophilyplum/sophiabeads-datasets/legacy.tar.gz/master">tar.gz</a> or a <a href="https://codeload.github.com/Sophilyplum/sophiabeads-datasets/legacy.zip/master">zip</a> file at the top of this page.</p>
 
-<p>Visit the <a href="https://zenodo.org/record/16474">Zenodo SophiaBeads Datasets</a> page to access and download the datasets. </p>
+<p>Visit the <a href="https://zenodo.org/record/16474">Zenodo SophiaBeads Datasets</a> page to access and download the datasets (zip files). </p>
 
-<h4>
-<a id="repository-contents" class="anchor" href="#repository-contents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository Contents</h4>
+<h3>
+<a id="repository-contents" class="anchor" href="#repository-contents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository Contents</h3>
 
 <ul>
 <li>XTek/
@@ -109,60 +92,81 @@
 <li>cgls_XTek.m</li>
 </ul>
 
-<h4>
-<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation</h4>
+<p><em>NOTE</em>: Individual documentation can be obtained by running the command <em>help <em>scriptname</em></em> in the MATLAB command window.</p>
 
-<p>A detailed documentation and tutorials about the codes can be found in <em>this report</em>.</p>
+<h3>
+<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation</h3>
 
-<h4>
-<a id="want-to-contribute" class="anchor" href="#want-to-contribute" aria-hidden="true"><span class="octicon octicon-link"></span></a>Want to Contribute?</h4>
+<p>We strongly recommend the user to read the detailed documentation and tutorials about running the codes, which can be found in <em>this report</em>.</p>
 
-<p>We are not open to external contributions. However, if you would still like to contribute with an idea or improved code, please get in touch and we will update the project with the appropriate attribution to you.</p>
+<h3>
+<a id="want-to-contribute" class="anchor" href="#want-to-contribute" aria-hidden="true"><span class="octicon octicon-link"></span></a>Want to Contribute?</h3>
 
-<h4>
-<a id="contact-us" class="anchor" href="#contact-us" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact Us</h4>
+<p>We are not open to external contributions. However, if you would still like to contribute with an idea or improved code, please get in touch and we will consider an update to the project with the appropriate attribution to you.</p>
 
-<p>We do not offer user support for this code. However, we welcome any suggestions for improvements or ideas. </p>
+<h2>
+<a id="contact-us" class="anchor" href="#contact-us" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact Us</h2>
 
-<p>To get in touch please visit <a href="http://www.maths.manchester.ac.uk/%7Escoban/contact.html">the contributor's website</a> and fill in the contact form.</p>
+<p>We do not offer user support for the project codes. However, we welcome any suggestions for improvements or ideas. </p>
 
-<h4>
-<a id="important-notes" class="anchor" href="#important-notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Important Notes</h4>
+<p>To get in touch please visit <a href="http://www.maths.manchester.ac.uk/%7Escoban">the contributor's webpage</a> and fill in <a href="http://www.maths.manchester.ac.uk/%7Escoban/contact.html">the contact form</a>.</p>
 
-<p>Please note that if you are using the SophiaBeads datasets and the project codes, you <em>must</em> refer to both of these separately. </p>
+<h2>
+<a id="important-notes" class="anchor" href="#important-notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Important Notes</h2>
+
+<ol>
+<li>
+<p>Please note that if you are using the SophiaBeads Datasets and the project codes, you <em>must</em> refer to both of these separately. </p>
 
 <ul>
 <li>To cite the datasets, please export the relevant citation style on the right hand size of the Zenodo page.</li>
 <li>To cite the GitHub code, please <em>update with link</em>.</li>
 </ul>
+</li>
+<li><p>The MEX files for all platforms are included in the release, as well the sourcecodes (written in c). This is done so the user is able to build and test own projectors and backprojectors. We include an additional script (setup.m) for users to work with <em>as a template</em>. However, this does not guarantee that the script will work in any operating system (not tested in Windows).</p></li>
+<li>
+<p>Version V1.0 codes are tested with the following versions of MATLAB, installed on major operating systems:</p>
+
+<ul>
+<li>
+<strong>Scientific Linux 6</strong>, <strong>Ubuntu 12.04</strong> and <strong>14.04</strong>: MATLAB R2010a, R2013a, 2014b.</li>
+<li>
+<strong>Mac OSX 10.9</strong> (Mavericks) and <strong>10.10</strong> (Yosemite): MATLAB R2009b, R2013a, R2014b.</li>
+<li>
+<strong>Windows 7</strong> and <strong>8.1</strong>: MATLAB R2012b, R2013a, R2014a, R2014b. </li>
+</ul>
+</li>
+</ol>
+
+<h2>
+<a id="references" class="anchor" href="#references" aria-hidden="true"><span class="octicon octicon-link"></span></a>References</h2>
+
+<p><strong>SophiaBeads Datasets</strong>: <a href="http://dx.doi.org/10.5281/zenodo.16474"><img src="https://zenodo.org/badge/doi/10.5281/zenodo.16474.svg" alt="DOI"></a></p>
+
+<p><strong>SophiaBeads Datasets Project Codes</strong>: </p>
+
+<p><strong>Documentation</strong>: [SophiaBeads Datasets Reconstruction and Quantification Tutorials][mimslink] </p>
+
+<h2>
+<a id="licenses" class="anchor" href="#licenses" aria-hidden="true"><span class="octicon octicon-link"></span></a>Licenses</h2>
+
+<p>The codes in sophiabeads-datasets are licensed under GPL v2 and MIT. Please read the documents LICENSE and LICENSE2 to learn more about using this code. You may also find it useful to visit <a href="http://choosealicense.com/">choosealicense.com</a> and learn about these licenses.</p>
 
 <h4>
-<a id="references" class="anchor" href="#references" aria-hidden="true"><span class="octicon octicon-link"></span></a>References</h4>
-
-<h6>
-<a id="sophiabeads-datasets-1" class="anchor" href="#sophiabeads-datasets-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>SophiaBeads Datasets</h6>
-
-<h6>
-<a id="sophiabeads-datasets-project-code" class="anchor" href="#sophiabeads-datasets-project-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>SophiaBeads Datasets Project Code</h6>
+<a id="copyright-c-2015-sophia-bethany-coban" class="anchor" href="#copyright-c-2015-sophia-bethany-coban" aria-hidden="true"><span class="octicon octicon-link"></span></a>Copyright (c) 2015 Sophia Bethany Coban</h4>
 
 <h4>
-<a id="licenses" class="anchor" href="#licenses" aria-hidden="true"><span class="octicon octicon-link"></span></a>Licenses</h4>
+<a id="university-of-manchester" class="anchor" href="#university-of-manchester" aria-hidden="true"><span class="octicon octicon-link"></span></a>University of Manchester</h4>
 
-<p>The codes in sophiabeads-datasets are licensed under GPL v2 and MIT. Please read the documents LICENSE and LICENSE2 to learn more about using this code (you may also visit <a href="http://choosealicense.com/">choosealicense.com</a> for comparisons).</p>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Sophilyplum/sophiabeads-datasets">SophiaBeads Datasets Project Codes</a> is maintained by <a href="https://github.com/Sophilyplum">Sophilyplum</a>.</span>
 
-<h5>
-<a id="copyright-c-2015-sophia-bethany-coban" class="anchor" href="#copyright-c-2015-sophia-bethany-coban" aria-hidden="true"><span class="octicon octicon-link"></span></a>Copyright (c) 2015 Sophia Bethany Coban</h5>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
 
-<h5>
-<a id="university-of-manchester" class="anchor" href="#university-of-manchester" aria-hidden="true"><span class="octicon octicon-link"></span></a>University of Manchester</h5>
-        </section>
+    </section>
 
-        <footer>
-          Sophiabeads Datasets Project Code is maintained by <a href="https://github.com/Sophilyplum">Sophilyplum</a><br>
-          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
-                  <script type="text/javascript">
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -173,7 +177,6 @@
             } catch(err) {}
           </script>
 
-      </div>
-    </div>
   </body>
 </html>
+
