@@ -9,7 +9,7 @@
 addpath XTek/ tools/ mex/
 
 %%%% Manually modify these variables %%%%
-pathname = '../SophiaBeads_$$_averaged/'; % Name of path where the dataset is stored e.g. '/media/somefolder/SophiaBeads_64_averaged/'. 
+pathname = '../SophiaBeads_$$_averaged/'; % Name of path where the dataset is stored e.g. '/media/somefolder/SophiaBeads_64_averaged/'.
 filename = 'SophiaBeads_$$_averaged'; % Name of the dataset e.g. 'SophiaBeads_64_averaged'
 geom_type = '2D'; % Necessary for loading data. Type can be '2D' or '3D' only.
 experiment_name = 'CGLS_200slices'; % For naming purposes...
@@ -37,4 +37,5 @@ else
     figure;imagesc(xcgls(:,:,floor(slices/2)));set(gca,'XTick',[],'YTick',[]);axis square;colormap gray;
 end
 
+% Write the reconstructed volume in the same path. 
 volname = write_vol(xcgls, pathname, filename, experiment_name, 'single');
