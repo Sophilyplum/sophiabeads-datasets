@@ -79,13 +79,12 @@ To get in touch please visit [the contributor's website](http://www.maths.manche
     - **Windows 7** and **8.1**: MATLAB R2012b, R2013a, R2014a, R2014b. 
  
 ### References
+**SophiaBeads Datasets** [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.16474.svg)](http://dx.doi.org/10.5281/zenodo.16474)
 
-##### 
+**SophiaBeads Datasets Project Codes** 
 
-##### SophiaBeads Datasets 
-[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.16474.svg)](http://dx.doi.org/10.5281/zenodo.16474)
+**Documentation** [SophiaBeads Datasets Reconstruction and Quantification Tutorials][mimslink] 
 
-##### SophiaBeads Datasets Project Code
 
 ### Licenses
 The codes in sophiabeads-datasets are licensed under GPL v2 and MIT. Please read the documents LICENSE and LICENSE2 to learn more about using this code. You may also find it useful to visit [choosealicense.com](http://choosealicense.com/) and learn about these licenses.
