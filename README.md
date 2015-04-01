@@ -32,7 +32,7 @@ Visit the [Zenodo SophiaBeads Datasets](https://zenodo.org/record/16474) page to
     - CBbackproject_c.c
     - project_singledata.c
     - backproject_singledata.c
-     - jacobs_rays.h
+    - jacobs_rays.h
   * mex/
     - CBbackproject_c.mexa64
     - CBbackproject_c.mexmaci64
