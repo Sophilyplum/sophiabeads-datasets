@@ -6,7 +6,7 @@
 % Code is available via the SophiaBeads Datasets project.
 % University of Manchester.
 
-addpath XTek/ tools/
+addpath XTek/ tools/ mex/
 
 %%%% Manually modify these variables %%%%
 pathname = '/Users/Sophilyplum/Desktop/SophiaBeads_64_averaged/'; % Name of path where the dataset is stored e.g. '/media/somefolder/SophiaBeads_64_averaged/'
@@ -17,11 +17,10 @@ slices = 200; % Only used if geom_type == 3D.
 iterations = 12;                     %   
 %%%% ------------------------------- %%%%
 
-if ~exist('mex/CBproject_c.mexa64','file') || ~exist('mex/CBbackproject_c.mexa64','file')
-    setup; % If no mex files are found, do a setup.
-else
-    addpath mex/
-end
+
+% setup;    % If no mex files are found, do a setup.
+            % NOTE: You do not need to run this if the mex files exist. For more info, type help setup on the command window.
+
 
 [data,geom] = pre_recon(pathname, filename, geom_type, slices); % Everything up to the reconstruction stage.
 
