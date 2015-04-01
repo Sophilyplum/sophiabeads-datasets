@@ -18,9 +18,9 @@ iterations = 12;                     %
 %%%% ------------------------------- %%%%
 
 
-% setup;    % If no mex files are found, do a setup.
-            % NOTE: You do not need to run this if the mex files exist. For more info, type help setup on the command window.
-
+% setup;    % Setup the mex files.
+            % NOTE: You do not need to run this if the mex files already exist.
+            %       For more info, type help setup on the command window.
 
 [data,geom] = pre_recon(pathname, filename, geom_type, slices); % Everything up to the reconstruction stage.
 
@@ -33,7 +33,7 @@ disp('Reconstruction is complete!');
 if strcmp(geom_type,'2D')
     figure;imagesc(xcgls);set(gca,'XTick',[],'YTick',[]);axis square;colormap gray;
 else
-    % plot the centre slice in 3D...
+    % plot the centre slice in 3D
     figure;imagesc(xcgls(:,:,floor(slices/2)));set(gca,'XTick',[],'YTick',[]);axis square;colormap gray;
 end
 
