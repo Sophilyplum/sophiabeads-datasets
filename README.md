@@ -53,7 +53,7 @@ Visit the [Zenodo SophiaBeads Datasets](https://zenodo.org/record/16474) page to
   - cgls_XTek.m
 
 
-*NOTE*: Individual help can be obtained by running the command 'help <scriptname>' in MATLAB command window.
+*NOTE*: Individual documentation can be obtained by running the command *help _scriptname_* in the MATLAB command window.
 
 ### Documentation
 We strongly recommend the user to read the detailed documentation and tutorials about running the codes, which can be found in _this report_.
