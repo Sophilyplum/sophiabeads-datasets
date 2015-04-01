@@ -90,6 +90,6 @@ To get in touch please visit [the contributor's website](http://www.maths.manche
 The codes in sophiabeads-datasets are licensed under GPL v2 and MIT. Please read the documents LICENSE and LICENSE2 to learn more about using this code. You may also find it useful to visit [choosealicense.com](http://choosealicense.com/) and learn about these licenses.
 
 
-###### Copyright (c) 2015 Sophia Bethany Coban
-###### University of Manchester
+##### Copyright (c) 2015 Sophia Bethany Coban
+##### University of Manchester
 
