@@ -73,13 +73,13 @@ We do not offer user support for the project codes. However, we welcome any sugg
 To get in touch please visit [the contributor's webpage](http://www.maths.manchester.ac.uk/~scoban) and fill in [the contact form](http://www.maths.manchester.ac.uk/~scoban/contact.html).
 
 ## Important Notes
-  1. Please note that if you are using the SophiaBeads Datasets and the project codes, you _must_ refer to both of these separately. 
+1. Please note that if you are using the SophiaBeads Datasets and the project codes, you _must_ refer to both of these separately. 
     - To cite the datasets, please export the relevant citation record on the right hand size of the Zenodo page. 
     - To cite the GitHub code, visit the [Zenodo page for the project codes](https://zenodo.org/record/16539) and export the relevant citation record on the right hand side.
 
 2. The MEX files for all platforms are included in the release, as well the sourcecodes (written in c). This is done so the user is able to build and test own projectors and back projectors. We include an additional script (setup.m) for users to work with _as a template_. However, this does not guarantee that the script will work in any operating system (originally written for Linux; may work on Mac OSX depending on the version of Xcode; not tested in Windows).
 
-  3. Version V1.0 codes are tested with the following versions of MATLAB, installed on major operating systems:
+3. Version V1.0 codes are tested with the following versions of MATLAB, installed on major operating systems:
     - **Scientific Linux 6**, **Ubuntu 12.04** and **14.04**: MATLAB R2010a, R2013a, 2014b.
     - **Mac OSX 10.9** (Mavericks) and **10.10** (Yosemite): MATLAB R2009b, R2013a, R2014b.
     - **Windows 7** and **8.1**: MATLAB R2012b, R2013a, R2014a, R2014b. 
