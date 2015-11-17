@@ -1,4 +1,4 @@
-% Script to run SophiaBeads experiments.
+% Script to run the SophiaBeads Dataset experiments.
 % Follows the tutorial as outlined in Section 5 in
 % SophiaBeads Datasets Project Documentation and Tutorials.
 % Available via http://eprints.ma.man.ac.uk/2290/
@@ -35,7 +35,11 @@ if strcmp(geom_type,'2D')
     figure;imagesc(xcgls);set(gca,'XTick',[],'YTick',[]);axis square;colormap gray;
 else
     % plot the centre slice in 3D
-    figure;imagesc(xcgls(:,:,floor(slices/2)));set(gca,'XTick',[],'YTick',[]);axis square;colormap gray;
+    figure;imagesc(xcgls(:,:,floor(slices/2)));axis square;axis off;colormap gray;
+    % plot the entire volume -- view horizontal slices
+    scrollView(xcgls,3);
+    % plot the entire volume -- view verical slices.
+    scrollView(xcgls,1);
 end
 
 % Write the reconstructed volume in the same path. 
