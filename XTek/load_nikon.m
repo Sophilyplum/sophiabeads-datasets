@@ -19,11 +19,17 @@ function [data, geom] = load_nikon(pathname, filename, geom_type, slice)
 %% Quick error checking:
 
 %pathname has to point to a folder:
-if ~strcmp(pathname(end),'/')
-    pathname = [pathname '/'];
+if ispc
+    if ~strcmp(pathname(end),'\') 
+    pathname = [pathname '\']; % only in windows...
     fprintf('WARNING: The input string pathname has to point to a folder. String has now been modified.\n');
+    end
+else
+    if ~strcmp(pathname(end),'/') 
+    pathname = [pathname '/']; 
+    fprintf('WARNING: The input string pathname has to point to a folder. String has now been modified.\n');
+    end
 end
-
 %% Reading the .xtekct file:
 
 fid = fopen([pathname filename '.xtekct']);  % Open the .xtekct file.
