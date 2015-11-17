@@ -87,7 +87,7 @@ function sfImagescWrapper(image, limits)
 
     imagesc(squeeze(image)', limits)
     colormap(gray);axis image;axis off;
-    %     colorbar
+    %     colorbar % uncomment this if you wish to place a colorbar next to the slices.
 end
 
 end % End of main function
