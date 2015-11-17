@@ -4,6 +4,7 @@ This repository contains the codes released for the SophiaBeads Datasets project
 **Release:** v2.0
 
 **Initial Release Date:** 01-APR-2015
+
 **Second Release Date:** 17-NOV-2015
 
 [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.16539.svg)](http://dx.doi.org/10.5281/zenodo.16539)
