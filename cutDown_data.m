@@ -19,7 +19,7 @@ function [data,geom]=cutDown_data(data, geom, geom_type, slices)
 
 % All Nikon XTek datasets have default size 2000 x 2000 x 2000. For the
 % SophiaBeads datasets, we are only interested in 1564 x 1564 x slices.
-% These numbers are determined during the data acquisition. 
+% These numbers are determined during the data acquisition.  
 pixels_nY = 1564;
 pixels_nZ = 1564;
 
