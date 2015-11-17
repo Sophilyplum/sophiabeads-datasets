@@ -7,6 +7,9 @@ function [data, geom] = load_nikon(pathname, filename, geom_type, slice)
 %   pathname: Name of path where the files are stored.
 %   filename: Name of files to load (name of .xtekct file without the
 %             extension).
+%   geom_type: String to determine whether to load 2D or 3D data. 
+%   slice: The horizontal slice set as the centre of the loaded data. 
+%          Default value is set as the centre of the full volumetric data.           
 %
 % OUTPUT:
 %   data: Returned Nikon XTek data in single format.
@@ -67,12 +70,12 @@ VoxelSize = str2double(params{2}(ind));
 
 %% Load the projection data:
 
-if nargin<4 % Default slice is the center slice!
-    slice = DetectorPixelsY/2;
+if nargin<4 % Default slice is the centre slice of the volumetric data.
+    slice = floor(DetectorPixelsY/2); % Change this to relocate the centre slice!
 end
 
 if strcmp(geom_type,'2D')
-    [data,geom]=data_geom_2D(pathname,filename,DetectorPixelsX,DetectorPixelsY,DetectorPixelSizeY,nProjections,slice);
+    [data,geom]=data_geom_2D(pathname,filename,DetectorPixelsX,nProjections,slice);
 elseif strcmp(geom_type,'3D')
     [data,geom]=data_geom_3D(pathname,filename,DetectorPixelsX,DetectorPixelsY,DetectorPixelSizeY,nProjections);
 else
@@ -127,7 +130,7 @@ end
 
 %% Subfunctions for 2D and 3D geometry setup and data loading.
 
-function [data,geom]=data_geom_2D(pathname,filename,DetectorPixelsX,DetectorPixelsY,DetectorPixelSizeY,nProjections,slice)
+function [data,geom]=data_geom_2D(pathname,filename,DetectorPixelsX,nProjections,slice)
 
 
 geom.dets.z = 0.0;
