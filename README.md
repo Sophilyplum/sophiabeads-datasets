@@ -49,6 +49,7 @@ Visit the Zenodo release page for the [SophiaBeads Datasets](https://zenodo.org/
     - centre_geom.m
     - find_centre.m
     - read_vol.m
+    - scrollView.m
     - write_tiff.m
     - write_vol.m
   - sophiaBeads.m
