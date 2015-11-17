@@ -1,5 +1,19 @@
 function scrollView(vol, dim, limits)
-
+%SCROLLVIEW
+% Function to scroll through a reconstructed volumetric
+% data within the same figure window.
+% 
+% INPUT: 
+%	vol: The reconstructed volume to view.
+%	dim: Dimension in which to view the volume along
+%		dim = 1 or 2: Vertical -- xz- or yz-slices;
+%		dim = 3: Horizontal -- xy-slices (default)
+% 	limits: Range of voxel values to display in the figure window.
+% 			Set to [min(vol) max(vol)] by default.
+%
+% Copyright (c) 2015 Sophia Bethany Coban, David Szotten
+% Code is available via the SophiaBeads Datasets project.
+% University of Manchester.
 
 app.size = size(vol);
 
