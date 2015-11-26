@@ -7,10 +7,13 @@ function scrollView(vol, dim, limits)
 %	vol: The reconstructed volume to view.
 %	dim: Dimension in which to view the volume along
 %		dim = 1 or 2: Vertical -- xz- or yz-slices;
-%		dim = 3: Horizontal -- xy-slices (default)
+%		dim = 3: Horizontal -- xy-slices.
 % 	limits: Range of voxel values to display in the figure window.
-% 			Set to [min(vol) max(vol)] by default.
 %
+% DEFAULT VALUES:
+%   dim = 3; (Horizontal slices)
+%   limits = [min(vol(:)) max(vol(:))];
+% 
 % Copyright (c) 2015 Sophia Bethany Coban, David Szotten
 % Code is available via the SophiaBeads Datasets project.
 % University of Manchester.
