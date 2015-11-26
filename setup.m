@@ -8,7 +8,7 @@
 % The script would only need to be run once, and will overwrite the existing
 % projector and backprojector mex files. To avoid this, modify the name after
 % -output option in lines 22 and 23.
-% To run before a SophiaBeads Dataset, uncomment line 21 in sophiabeads.m.
+% To run before a SophiaBeads Dataset, uncomment line 22 in sophiabeads.m.
 %
 %
 % Copyright (c) 2015 Sophia Bethany Coban
