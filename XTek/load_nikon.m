@@ -136,15 +136,13 @@ function [data,geom]=data_geom_2D(pathname,filename,DetectorPixelsX,nProjections
 geom.dets.z = 0.0;
 geom.dets.nz = 1;
 
-% Indicate where we are.
-h = waitbar(0,'Loading projections...');
 data = uint16(zeros(DetectorPixelsX, nProjections));
 for i = 1:nProjections
     tmp_data = imread([pathname filename '_' dec2base(i,10,4) '.tif'])';
     data(:,i) = tmp_data(:,slice);
-    waitbar(i/nProjections,h,['Loading projection ' num2str(i)]);
+
 end
-delete(h);
+
 
 end
 
