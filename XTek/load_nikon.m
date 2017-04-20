@@ -71,12 +71,12 @@ VoxelSize = str2double(params{2}(ind));
 %% Load the projection data:
 
 if nargin<4 % Default slice is the centre slice of the volumetric data.
-sinoFile = [pathname 'CentreSlice' sla 'Sinograms' sla filename '_' dec2base(1,10,4) '.tif'];
-if exist(sinoFile, 'file') == 2
-        slice = 0;
-    else
+    sinoFile = [pathname 'CentreSlice' sla 'Sinograms' sla filename '_' dec2base(1,10,4) '.tif'];
+    if exist(sinoFile, 'file') == 2 % Check if sinogram file exists!
+    	slice = 0;
+	else % if no sinogram file, define default slice to be read from 3D data.
         slice = floor(DetectorPixelsY/2);
-    end
+	end
 end
 
 if strcmp(geom_type,'2D')
@@ -142,7 +142,7 @@ geom.dets.z = 0.0;
 geom.dets.nz = 1;
 
 data = uint16(zeros(DetectorPixelsX, nProjections));
-if slice == 0 % Default slice recon for 2D is the centre slice, read straight from the sinogram file if it exists.
+if slice == 0 % Default slice recon for 2D is the centre slice, read straight from the sinogram file (if it exists).
 	data = imread()';
 else % User has the option to pick a different slice if 3D data is available.
 	for i = 1:nProjections+1
