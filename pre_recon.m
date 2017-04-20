@@ -32,8 +32,8 @@ geom = centre_geom(data, geom);
 % Vectorize dataset:
 data=data(:); 
 
-% Apply empirical beam hardening correction (this just amplifies values in data, hence empirical...)
-data=data.^2;
+% OPTIONAL: Apply empirical beam hardening correction (this just amplifies values in data). Uncomment next line.
+% data=data.^2;
 
 disp('Pre-reconstruction stage is complete!');
 end
