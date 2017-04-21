@@ -7,9 +7,9 @@ function [data, geom] = load_nikon(pathname, filename, geom_type, slice)
 %   pathname: Name of path where the files are stored.
 %   filename: Name of files to load (name of .xtekct file without the
 %             extension).
-%   geom_type: String to determine whether to load 2D or 3D data. 
-%   slice: The horizontal slice set as the centre of the loaded data. 
-%          Default value is set as the centre of the full volumetric data.           
+%   geom_type: String to determine whether to load 2D or 3D data.
+%   slice: The horizontal slice set as the centre of the loaded data.
+%          Default value is set as the centre of the full volumetric data.
 %
 % OUTPUT:
 %   data: Returned Nikon XTek data in single format.
@@ -22,14 +22,17 @@ function [data, geom] = load_nikon(pathname, filename, geom_type, slice)
 %% Quick error checking:
 
 %pathname has to point to a folder:
+%pathname has to point to a folder:
 if ispc
-    if ~strcmp(pathname(end),'\') 
-    pathname = [pathname '\']; % only in windows...
+    sla='\';
+    if ~strcmp(pathname(end),sla) 
+    pathname = [pathname sla]; % only in windows...
     fprintf('WARNING: The input string pathname has to point to a folder. String has now been modified.\n');
     end
 else
-    if ~strcmp(pathname(end),'/') 
-    pathname = [pathname '/']; 
+    sla='/';
+    if ~strcmp(pathname(end),sla) 
+    pathname = [pathname sla]; 
     fprintf('WARNING: The input string pathname has to point to a folder. String has now been modified.\n');
     end
 end
@@ -73,14 +76,14 @@ VoxelSize = str2double(params{2}(ind));
 if nargin<4 % Default slice is the centre slice of the volumetric data.
     sinoFile = [pathname 'CentreSlice' sla 'Sinograms' sla filename '_' dec2base(1,10,4) '.tif'];
     if exist(sinoFile, 'file') == 2 % Check if sinogram file exists!
-    	slice = 0;
-	else % if no sinogram file, define default slice to be read from 3D data.
+        slice = 0;
+    else % if no sinogram file, define default slice to be read from 3D data.
         slice = floor(DetectorPixelsY/2);
-	end
+    end
 end
 
 if strcmp(geom_type,'2D')
-    [data,geom]=data_geom_2D(pathname,filename,DetectorPixelsX,nProjections,slice);
+    [data,geom]=data_geom_2D(pathname,filename,DetectorPixelsX,nProjections,slice,sla);
 elseif strcmp(geom_type,'3D')
     [data,geom]=data_geom_3D(pathname,filename,DetectorPixelsX,DetectorPixelsY,DetectorPixelSizeY,nProjections);
 else
@@ -135,7 +138,7 @@ end
 
 %% Subfunctions for 2D and 3D geometry setup and data loading.
 
-function [data,geom]=data_geom_2D(pathname,filename,DetectorPixelsX,nProjections,slice)
+function [data,geom]=data_geom_2D(pathname,filename,DetectorPixelsX,nProjections,slice,sla)
 
 
 geom.dets.z = 0.0;
@@ -143,12 +146,12 @@ geom.dets.nz = 1;
 
 data = uint16(zeros(DetectorPixelsX, nProjections));
 if slice == 0 % Default slice recon for 2D is the centre slice, read straight from the sinogram file (if it exists).
-	data = imread()';
+    data = imread([pathname 'CentreSlice' sla 'Sinograms' sla filename '_' dec2base(1,10,4) '.tif'])';
 else % User has the option to pick a different slice if 3D data is available.
-	for i = 1:nProjections+1
-		tmp_data = imread([pathname filename '_' dec2base(i,10,4) '.tif'])';
-	 	data(:,i) = tmp_data(:,slice);
-	end
+    for i = 1:nProjections+1
+        tmp_data = imread([pathname filename '_' dec2base(i,10,4) '.tif'])';
+        data(:,i) = tmp_data(:,slice);
+    end
 end
 
 
