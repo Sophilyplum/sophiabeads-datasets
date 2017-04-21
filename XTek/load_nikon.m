@@ -148,7 +148,7 @@ data = uint16(zeros(DetectorPixelsX, nProjections));
 if slice == 0 % Default slice recon for 2D is the centre slice, read straight from the sinogram file (if it exists).
     data = imread([pathname 'CentreSlice' sla 'Sinograms' sla filename '_' dec2base(1,10,4) '.tif'])';
 else % User has the option to pick a different slice if 3D data is available.
-    for i = 1:nProjections+1
+    for i = 1:nProjections
         tmp_data = imread([pathname filename '_' dec2base(i,10,4) '.tif'])';
         data(:,i) = tmp_data(:,slice);
     end
