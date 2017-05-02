@@ -25,15 +25,15 @@ function [data, geom] = load_nikon(pathname, filename, geom_type, slice)
 %pathname has to point to a folder:
 if ispc
     sla='\';
-    if ~strcmp(pathname(end),sla) 
-    pathname = [pathname sla]; % only in windows...
-    fprintf('WARNING: The input string pathname has to point to a folder. String has now been modified.\n');
+    if ~strcmp(pathname(end),sla)
+        pathname = [pathname sla]; % only in windows...
+        fprintf('WARNING: The input string pathname has to point to a folder. String has now been modified.\n');
     end
 else
     sla='/';
-    if ~strcmp(pathname(end),sla) 
-    pathname = [pathname sla]; 
-    fprintf('WARNING: The input string pathname has to point to a folder. String has now been modified.\n');
+    if ~strcmp(pathname(end),sla)
+        pathname = [pathname sla];
+        fprintf('WARNING: The input string pathname has to point to a folder. String has now been modified.\n');
     end
 end
 %% Reading the .xtekct file:
@@ -154,7 +154,7 @@ else % User has the option to pick a different slice if 3D data is available.
     end
 end
 
-
+geom.voxels = [2000 2000 1]; % Volume size in 2D.
 
 end
 
@@ -174,4 +174,7 @@ delete(h);
 
 % Image pixels go down, whereas our z voxel ordering goes up, so flip.
 data = data(:,end:-1:1,:);
+
+geom.voxels = [2000 2000 2000]; % Volume size in 3D.
+
 end
